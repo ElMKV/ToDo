@@ -17,10 +17,7 @@ import java.util.ArrayList;
 public class Fragment1 extends Fragment {
 
     private RecyclerView recyclerView;
-
-
-    public Fragment1() {
-    }
+    MyRecyclerViewAdapter adapter;
 
     @Nullable
     @Override
@@ -30,7 +27,16 @@ public class Fragment1 extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        ArrayList<String> animalNames = new ArrayList<>();
+        animalNames.add("Horse");
+        animalNames.add("Cow");
+        animalNames.add("Camel");
+        animalNames.add("Sheep");
+        animalNames.add("Goat");
 
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        adapter = new MyRecyclerViewAdapter(getContext(), animalNames);
+        recyclerView.setAdapter(adapter);
 
         return view;
     }
