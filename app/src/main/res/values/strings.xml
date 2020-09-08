@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ToDo</string>
+    <string name="On_processing">В работе</string>
+    <string name="Out_of_processing">Выполнено</string>
 </resources>
