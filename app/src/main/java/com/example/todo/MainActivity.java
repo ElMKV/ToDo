@@ -10,6 +10,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(adapter); // устанавливаем адаптер
         viewPager.setCurrentItem(0); // выводим второй экран
+
+
 
 //        viewPager.setPageTransformer(false, new ViewPager.PageTransformer() {
 //
@@ -75,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    
 
 
 

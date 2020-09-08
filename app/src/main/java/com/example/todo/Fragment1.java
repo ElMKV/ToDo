@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class Fragment1 extends Fragment {
 
     private RecyclerView recyclerView;
@@ -28,7 +30,12 @@ public class Fragment1 extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        recyclerView.setAdapter(new RandomNumListAdapter(1234));
+
+
         return view;
     }
+
+
 }
+
+
