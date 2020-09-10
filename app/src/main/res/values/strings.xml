@@ -2,4 +2,9 @@
     <string name="app_name">ToDo</string>
     <string name="On_processing">В работе</string>
     <string name="Out_of_processing">Выполнено</string>
+    <string name="dialog_message">Новое дело</string>
+    <string name="positive_button">Да</string>
+    <string name="negative_button">Нет</string>
+    <string name="name_job">Название</string>
+    <string name="description_job">Описание</string>
 </resources>

@@ -1,7 +1,11 @@
 package com.example.todo;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TimePicker;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
 
         ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(adapter); // устанавливаем адаптер
         viewPager.setCurrentItem(0); // выводим второй экран
+
+
 
 //        viewPager.setPageTransformer(false, new ViewPager.PageTransformer() {
 //
@@ -34,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
+
+
+
     }
 
 
